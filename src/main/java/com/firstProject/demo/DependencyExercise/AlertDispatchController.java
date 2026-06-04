@@ -1,4 +1,4 @@
-package com.firstProject.demo.Rest;
+package com.firstProject.demo.DependencyExercise;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,0 +1,11 @@
+package com.firstProject.demo.Rest;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class SMSNotification implements NotificationService{
+    @Override
+    public String sendAlert(String msg){
+        return "[SMS-GATEWAY] CRITICAL: "+msg;
+    }
+}

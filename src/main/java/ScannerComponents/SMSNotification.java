@@ -1,4 +1,4 @@
-package com.firstProject.demo.DependencyExercise;
+package ScannerComponents;
 
 import org.springframework.stereotype.Component;
 

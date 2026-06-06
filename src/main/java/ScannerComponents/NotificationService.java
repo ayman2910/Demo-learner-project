@@ -1,4 +1,4 @@
-package com.firstProject.demo.DependencyExercise;
+package ScannerComponents;
 
 public interface NotificationService {
     public String sendAlert(String msg);

@@ -14,7 +14,7 @@ public class AlertDispatchController {
 
     @Autowired
 
-    public AlertDispatchController(@Qualifier("SMSNotification") NotificationService primaryService, @Qualifier("slackNotification")NotificationService backupService) {
+    public AlertDispatchController( NotificationService primaryService, NotificationService backupService) {
         this.primaryService = primaryService;
         this.backupService = backupService;
     }

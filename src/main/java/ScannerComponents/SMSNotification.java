@@ -1,8 +1,9 @@
 package ScannerComponents;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
+@Primary
 public class SMSNotification implements NotificationService{
     @Override
     public String sendAlert(String msg){

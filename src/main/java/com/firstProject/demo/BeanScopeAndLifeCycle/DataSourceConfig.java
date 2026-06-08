@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class DataSourceConfig {
     @Bean(initMethod = "configurePool", destroyMethod = "closePool")
-    @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+    @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
     public CustomerConnectionPool createPool(){
         System.out.println("Config: Instantiating CustomerConnectionPool...");
         return new CustomerConnectionPool();
